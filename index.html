@@ -3,7 +3,90 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
         <title>Tic Tac Toe</title>
     </head>
-    <body></body>
+    <body>
+        <header>
+            <h1>Tic Tac Toe</h1>
+            <div class="button-group">
+                <button>
+                    <img
+                        class="icon"
+                        src="icons8-bender-48.png"
+                        alt="bender-ai"
+                    />AI partner
+                </button>
+                <button>
+                    <img
+                        class="icon"
+                        src="icons8-homer-simpson-48.png"
+                        alt="homer-player"
+                    />Two players
+                </button>
+            </div>
+        </header>
+        <div class="form-container non-active">
+            <form>
+                <div class="control-input">
+                    <label for="player1">
+                        <span>Player 1:</span>
+                        <input
+                            type="text"
+                            name="player1"
+                            id="player1"
+                            placeholder="nickname"
+                        />
+                    </label>
+                </div>
+                <div class="control-input">
+                    <label for="player2">
+                        <span>Player 2:</span>
+                        <input
+                            type="text"
+                            name="player2"
+                            id="player2"
+                            placeholder="nickname"
+                        />
+                    </label>
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+
+        <div class="player-1 player-name non-active">
+            <h2>Name</h2>
+        </div>
+        <div class="score player-1 non-active">
+            <p>0</p>
+        </div>
+        <div class="player-2 player-name non-active">
+            <h2>Name</h2>
+        </div>
+        <div class="score player-2 non-active">
+            <p>10</p>
+        </div>
+
+        <main>
+            <div class="container non-active">
+                <div class="gameboard">
+                    <!-- <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div> -->
+                </div>
+                <div class="controls">
+                    <button class="restart">Restart</button>
+                    <p class="status">Player 1 turn</p>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
 </html>
