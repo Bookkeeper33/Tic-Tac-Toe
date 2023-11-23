@@ -10,15 +10,15 @@
     <body>
         <header>
             <h1>Tic Tac Toe</h1>
-            <div class="button-group">
-                <button>
+            <div class="button-container">
+                <!-- <button>
                     <img
                         class="icon"
                         src="icons8-bender-48.png"
                         alt="bender-ai"
                     />AI partner
-                </button>
-                <button>
+                </button> -->
+                <button id="play">
                     <img
                         class="icon"
                         src="icons8-homer-simpson-48.png"
@@ -27,8 +27,8 @@
                 </button>
             </div>
         </header>
-        <div class="form-container non-active">
-            <form>
+        <div class="form-container">
+            <form id="form">
                 <div class="control-input">
                     <label for="player1">
                         <span>Player 1:</span>
@@ -51,39 +51,21 @@
                         />
                     </label>
                 </div>
-                <button>Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
 
-        <div class="player-1 player-name non-active">
-            <h2>Name</h2>
-        </div>
-        <div class="score player-1 non-active">
-            <p>0</p>
-        </div>
-        <div class="player-2 player-name non-active">
-            <h2>Name</h2>
-        </div>
-        <div class="score player-2 non-active">
-            <p>10</p>
-        </div>
+        <div class="player-1 player-name"></div>
+        <div class="player-score score-1"></div>
+        <div class="player-2 player-name"></div>
+        <div class="player-score score-2"></div>
 
         <main>
-            <div class="container non-active">
-                <div class="gameboard">
-                    <!-- <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div> -->
-                </div>
+            <div class="container">
+                <div class="gameboard"></div>
                 <div class="controls">
                     <button class="restart">Restart</button>
-                    <p class="status">Player 1 turn</p>
+                    <p class="status"></p>
                 </div>
             </div>
         </main>
