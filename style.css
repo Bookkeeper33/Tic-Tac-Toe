@@ -63,11 +63,11 @@ header > .button-container {
     transition: all 0.2s linear;
 }
 
-.button-group > button:hover {
+.button-container > button:hover {
     background-color: var(--primary-color);
 }
 
-.button-group > button:active {
+.button-container > button:active {
     transform: scale(0.98);
 }
 
@@ -192,7 +192,7 @@ main {
     grid-area: main;
     justify-self: center;
     margin-top: 20px;
-    transition: opacity 1s ease-out;
+    transition: opacity 0.3s ease-out;
     opacity: 0;
     height: 0;
 }
@@ -219,7 +219,7 @@ main {
     background-color: var(--header);
     border-radius: 12px;
     border: none;
-    transition: all 0.1s linear;
+    transition: all 0.3s linear;
     cursor: pointer;
     font-size: 2em;
 }
@@ -245,7 +245,7 @@ main {
     font-size: 1em;
     font-weight: bold;
     color: #64748b;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .restart:active {
